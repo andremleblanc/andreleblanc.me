@@ -5,13 +5,11 @@ body {
   padding-top: 70px;
  }
 
-h1, h2, h3 {
-  font-weight: bold;
-}
+h1, h2, h3 { font-weight: bold; }
 
-main {
-  min-height: calc(100vh - 126px)
-}
+img { max-width: 100%; }
+
+main { min-height: calc(100vh - 126px); }
 
 footer.main {
   .copyright {
@@ -26,4 +24,13 @@ footer.main {
   }
 }
 
+.caption  {
+  font-size: 0.75em;
+  font-style: italic;
+  padding: 0px 0 10px;
+  text-align: center;
+}
+
 .container { max-width: 970px; }
+
+.container.post { max-width: 870px; }
