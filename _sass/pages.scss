@@ -46,12 +46,18 @@
   }
 }
 
+#contact {
+  .container {
+    max-width: 600px;
+  }
+}
+
 #home {
   .container {
     ul {
       list-style: none;
       margin-left: 0;
-      padding-left: 0; 
+      padding-left: 0;
     }
   }
 }

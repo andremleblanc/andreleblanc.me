@@ -12,11 +12,8 @@
 
     <div class="collapse navbar-collapse" id="main-nav">
       <ul class="nav navbar-nav">
-        {% assign default_pages = site.pages %}
-        {% assign nav_pages = site.header_pages | default: default_pages %}
-
-        {% for nav_page in nav_pages %}
-          {% if nav_page.title %}
+        {% for nav_page in site.pages %}
+          {% if nav_page.include_in_nav %}
             {% if page.url == nav_page.url %}
               <li class="active"><a href="{{nav_page.url}}">{{nav_page.title}} <span class="sr-only">(current)</a></li>
             {% else %}
@@ -27,7 +24,7 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Contact</a></li>
+        <li><a href="{{ "/contact" | relative_url }}">Contact</a></li>
       </ul>
     </div>
   </div>
