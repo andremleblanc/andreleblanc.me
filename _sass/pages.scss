@@ -8,9 +8,17 @@
       border-bottom: none;
     }
 
-    h1, h2 { padding: 25px 0; }
+    h1, h2 {
+      @media (max-width: 767px) { padding: 0; }
+
+      padding: 25px 0;
+    }
 
     .content {
+      @media (max-width: 767px) {
+        padding-top: 0px;
+      }
+
       border-bottom: 1px solid #CCC;
       padding-top: 25px;
       padding-bottom: 25px;
