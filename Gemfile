@@ -6,4 +6,8 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
 end
 
+group :development do
+  gem "capistrano", "~> 3.9"
+end
+
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
