@@ -6,6 +6,7 @@ layout: default
 
     <header>
       <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+      </span>
       <p>
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
           {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
@@ -13,6 +14,12 @@ layout: default
         </time>
           • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ site.author }}</span></span>
       </p>
+      <span>
+        {% for tag in page.tags %}
+          <a class="tag" href="/tag/{{ tag }}">
+            #{{ page.tags }}
+          </a>
+        {% endfor %}
     </header>
 
     <div itemprop="articleBody">
