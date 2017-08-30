@@ -34,3 +34,9 @@ footer.main {
 .container { max-width: 970px; }
 
 .container.post { max-width: 870px; }
+
+.tag:hover {
+  text-decoration: none;
+
+  .label { background-color: #23527c }
+}

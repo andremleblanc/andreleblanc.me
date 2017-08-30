@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="container">
+  <h1>Posts tagged #{{ page.tag }}</h1>
+
+  <ul>
+  {% for post in page.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
+    </li>
+  {% endfor %}
+  </ul>
+
+  <div id="tag-cloud">
+    {% for tag_hash in site.tags %}
+      {% assign tag = tag_hash[0] %}
+      <a class="tag" href="/tag/{{ tag }}">#{{ tag }}</a>
+    {% endfor %}
+  </div>
+</div>

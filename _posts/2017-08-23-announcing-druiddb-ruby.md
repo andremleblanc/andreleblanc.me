@@ -2,6 +2,7 @@
 layout: post
 title: Announcing DruidDB-Ruby
 excerpt: The gem was originally written to leverage the Tranquility Core library by including the JAR inside the gem, which dictated using JRuby...
+tags: ruby druid opensource druiddbruby project
 ---
 
 ## What Does it Do

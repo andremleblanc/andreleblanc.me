@@ -7,17 +7,23 @@ author: Andre LeBlanc
 disqus:
   shortname: andreleblanc-me
 
-# Build settings
+tag_page_layout: tag_page
+tag_page_dir: tag
+
 markdown: kramdown
 plugins:
   - jekyll-feed
 permalink: pretty
 
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - Capfile
+  - README.md
+  - config/
+  - log/

@@ -31,6 +31,8 @@ GEM
       jekyll (~> 3.3)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
+    jekyll-tagging (1.1.0)
+      nuggets
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
     kramdown (1.14.0)
@@ -42,6 +44,7 @@ GEM
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (4.1.0)
+    nuggets (1.5.0)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
@@ -68,6 +71,7 @@ DEPENDENCIES
   jekyll (= 3.5.1)
   jekyll-compose
   jekyll-feed (~> 0.6)
+  jekyll-tagging
   tzinfo-data
 
 BUNDLED WITH
